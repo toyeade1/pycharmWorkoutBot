@@ -24,10 +24,6 @@ def save_workout():
     reps = request.form['reps']
     weight = request.form['weight']
 
-    if workout_name == 'Bp' or 'bp':
-        workout_name = 'Bench Press'
-    if workout_name == 'Dp' or 'dp':
-        workout_name = 'Dumbell Bench Press'
 
     # Connect to the Sheety API and enter information
     sheet_input = {
